@@ -33,7 +33,7 @@ options(error = function() {
 #  muy pronto esto se leera desde un archivo formato .yaml
 PARAM <- list()
 
-PARAM$experimento_data <- "exp/PP7230"
+PARAM$experimento_data <- "PP7230"
 PARAM$experimento <- "HT7240"
 
 PARAM$semilla_azar <- 994391 # Aqui poner su  primer  semilla
@@ -276,7 +276,8 @@ EstimarGanancia_lightgbm <- function(x) {
 action_limitar_memoria( 4 )
 
 #setwd("~/buckets/b1/exp/") # Establezco el Working Directory
-setwd("/mnt/storage/work/dmeyf/")
+#setwd("/mnt/storage/work/dmeyf/exp/")
+setwd("~/buckets/buck893/exp/")
 
 # cargo el dataset donde voy a entrenar el modelo
 dataset <- fread(paste0(PARAM$experimento_data,"/dataset.csv.gz"))
