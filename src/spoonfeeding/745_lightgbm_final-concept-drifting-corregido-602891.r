@@ -33,7 +33,7 @@ PARAM$experimento_bayesiana <- "HT7440-concept-drifting-corregido-602891"
 
 PARAM$experimento <- "KA7450-concept-drifting-corregido-602891"
 
-PARAM$semilla_azar <- 994391 # Aqui poner su  primer  semilla
+PARAM$semilla_azar <- 602891 # Aqui poner su  primer  semilla
 PARAM$semillas_cantidad <- 3
 
 # c(1,2) son el mejor y el segundo mejor de la bayesian optimization
