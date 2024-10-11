@@ -40,7 +40,7 @@ options(error = function() {
 #  muy pronto esto se leera desde un archivo formato .yaml
 PARAM <- list()
 
-PARAM$experimento_data <- "PP7430-concept-drifting-corregido"
+PARAM$experimento_data <- "PP7230-concept-drifting-corregido"
 PARAM$experimento <- "HT7440-concept-drifting-corregido"
 
 PARAM$semilla_azar <- 994391 # Aqui poner su  primer  semilla
@@ -97,7 +97,7 @@ PARAM$bo_lgb <- makeParamSet(
 )
 
 
-PARAM$bo_iteraciones <- 100 # iteraciones de la Optimizacion Bayesiana
+PARAM$bo_iteraciones <- 50 # iteraciones de la Optimizacion Bayesiana
 
 
 #------------------------------------------------------------------------------

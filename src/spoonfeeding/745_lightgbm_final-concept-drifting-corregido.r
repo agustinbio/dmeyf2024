@@ -28,7 +28,7 @@ options(error = function() {
 # defino los parametros de la corrida, en una lista, la variable global  PARAM
 #  muy pronto esto se leera desde un archivo formato .yaml
 PARAM <- list()
-PARAM$experimento_data <- "PP7430-concept-drifting-corregido"
+PARAM$experimento_data <- "PP7230-concept-drifting-corregido"
 PARAM$experimento_bayesiana <- "HT7440-concept-drifting-corregido"
 
 PARAM$experimento <- "KA7450-concept-drifting-corregido"
