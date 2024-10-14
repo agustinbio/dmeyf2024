@@ -8,4 +8,6 @@ que produce el script 745_lightgbm_final-concept-drifting-corregido.r
 
 El input de este script lo producen 744_lightgbm_binaria_BO-concept-drifting-corregido.r y 723_preprocesamiento-concept-drifting-corregido.r
 
+Ambos scripts fueron copiados a la carpeta src (desde spoonfeeding).
+
 Por qué se eligió esta semilla se puede ver en la carpeta puntajes, donde se encuentran los gráficos correspondientes.
