@@ -174,7 +174,7 @@ for ( irank in ranks ) {
       cat( "written prediccion Kaggle\n")
 
       # hago el submit
-      submitear <- FALSE
+      submitear <- TRUE
       if( "rango_submit"  %in%  names(envg$PARAM) )
       {
         if( !(sem %in% envg$PARAMrango_submit) ) submitear <- FALSE
@@ -193,7 +193,7 @@ for ( irank in ranks ) {
         Sys.chmod( "subir.sh", mode = "744", use_umask = TRUE)
 
         res <- system( "./subir.sh", intern= TRUE )
-        Sys.sleep( 30 )  # espero para no saturar
+        #ys.sleep( 30 )  # espero para no saturar
         res <- "Successfully"  # pequena ayuda ...
 
         if( substr(res, 1, 12) == "Successfully" ) {
@@ -223,6 +223,8 @@ for ( irank in ranks ) {
     rm(temp_pred)
     gc(verbose= FALSE)
   }
+  
+  Sys.sleep( 60 )  # espero para no saturar
 
   tb_ganancias_local[ , gan_sum := gan_sum / length(isems)]
   vganancias <- c( vganancias, tb_ganancias_local[ , max( gan_sum )] )
