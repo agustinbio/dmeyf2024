@@ -420,7 +420,7 @@ EV_evaluate_conclase_gan <- function( pinputexps )
 # Este es el  Workflow Baseline
 # Que predice 202108 donde NO conozco la clase
 
-wf_experimento_lags <- function( pnombrewf )
+wf_experimento_lags_1al6_12 <- function( pnombrewf )
 {
   param_local <- exp_wf_init( pnombrewf ) # linea workflow inicial fija
 
@@ -457,5 +457,5 @@ wf_experimento_lags <- function( pnombrewf )
 # Aqui comienza el programa
 
 # llamo al workflow con future = 202106
-wf_experimento_lags()
+wf_experimento_lags_1al6_12()
 
