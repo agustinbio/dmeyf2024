@@ -19,7 +19,7 @@ envg$EXPENV$repo_dir <- "~/dmeyf2024/"
 envg$EXPENV$datasets_dir <- "~/buckets/b1/datasets/"
 envg$EXPENV$messenger <- "~/install/zulip_enviar.sh"
 
-envg$EXPENV$semilla_primigenia <- 602891
+envg$EXPENV$semilla_primigenia <- 696403
 
 # leo el unico parametro del script
 args <- commandArgs(trailingOnly=TRUE)
@@ -458,7 +458,7 @@ KA_evaluate_kaggle_semillerio <- function( pinputexps )
 {
   if( -1 == (param_local <- exp_init())$resultado ) return( 0 )# linea fija
 
-  param_local$meta$script <- "/src/wf-etapas/z2603_KA_evaluate_kaggle_SEMI.r"
+  param_local$meta$script <- "/src/wf-etapas/2603_KA_evaluate_kaggle_SEMI.r"
 
   param_local$semilla <- NULL  # no usa semilla, es deterministico
 
@@ -479,7 +479,7 @@ KA_evaluate_kaggle_semillerio <- function( pinputexps )
 # Que predice 202107 donde conozco la clase
 # y ya genera graficos
 
-wf_SEMI_sep_orden227_rank_cero_fijo_sin202104_corregido4_egue <- function( pnombrewf )
+wf_SEMI_sep_orden227_rank_cero_fijo_sin202104_corregido4 <- function( pnombrewf )
 {
   param_local <- exp_wf_init( pnombrewf ) # linea fija
 
@@ -520,6 +520,6 @@ wf_SEMI_sep_orden227_rank_cero_fijo_sin202104_corregido4_egue <- function( pnomb
 # Aqui comienza el programa
 
 # llamo al workflow con future = 202108
-wf_SEMI_sep_orden227_rank_cero_fijo_sin202104_corregido4_euge()
+wf_SEMI_sep_orden227_rank_cero_fijo_sin202104_corregido4()
 
 
