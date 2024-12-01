@@ -506,7 +506,7 @@ wf_SEMI_sep_orden227_rank_cero_fijo_sin202104_corregido4 <- function( pnombrewf 
     c(ht, ts9), # los inputs
     ranks = c(1), # 1 = el mejor de la bayesian optimization
     semillerio = 100,   # cantidad de semillas finales
-    repeticiones_exp = 3  # cantidad de repeticiones del semillerio
+    repeticiones_exp = 4  # cantidad de repeticiones del semillerio
   )
 
   SC_scoring_semillerio( c(fm, ts9) )
